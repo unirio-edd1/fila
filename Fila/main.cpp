@@ -45,6 +45,16 @@ int main(int argc, char *argv[])
                 else
                     cout << "Fila vazia.\n";
                 break;
+            case 6:
+                int pos;
+                cout << "Entre com um indice a ser consultado:\n";
+                cin >> pos;
+                if (Fila.consultaPosicao(pos, Item)){
+                    cout << pos << " elemento da fila: " << Item << "\n";
+                }
+                else
+                    cout << "Fila vazia ou valor fora do escopo.\n";
+                break;
         }
     system("PAUSE");
     return EXIT_SUCCESS;

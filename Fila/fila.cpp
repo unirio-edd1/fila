@@ -78,3 +78,11 @@ bool fila::removeFim(int& elemento){
     }
     return false;
 }
+
+bool fila::consultaPosicao(const int& posicao, int& elemento){
+    if (posicao<=n && !vazia()){
+        elemento = vetor[(ini+posicao-1)%tam];
+        return true;
+    }
+    return false;
+}

@@ -18,6 +18,10 @@ public:
     fila(int tamanho = 10);
     virtual ~fila();
     virtual bool remove(int& elemento);
+    virtual bool removeFim(int& elemento);
     virtual bool insere(const int& elemento);
+    virtual bool insereInicio(const int& elemento);
+    
+    bool consultaPosicao(const int& posicao, int& elemento);
 };
 #endif
