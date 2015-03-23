@@ -51,6 +51,16 @@ bool fila::insere(const int &elemento){
     return false;
 }
 
+bool fila::insereInicio(const int &elemento){
+    if(!cheia()){
+        int proximoElemento = (ini+tam-1) % tam;
+        vetor[proximoElemento] = elemento;
+        n++;
+        return true;
+    }
+    return false;
+}
+
 bool fila::remove(int &elemento){
     if (!vazia()){
         ini = proximoInicio();

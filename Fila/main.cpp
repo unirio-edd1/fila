@@ -30,7 +30,13 @@ int main(int argc, char *argv[])
             case 3:
                 cout << "Conteudo da fila:\n";
                 Fila.imprime();
-                break;        
+                break;
+            case 4:
+                cout << "Entre com o item para adicionar no início da fila:\n";
+                cin >> Item;
+                if(!Fila.insereInicio(Item))
+                    cout << "Fila cheia. \n";
+                break;
         }
     system("PAUSE");
     return EXIT_SUCCESS;

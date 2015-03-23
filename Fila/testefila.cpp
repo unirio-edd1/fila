@@ -25,6 +25,7 @@ int testefila::menu() const
     cout << "1. Insere elemento na fila.\n";
     cout << "2. Remove elemento da fila.\n";
     cout << "3. Imprime elementos da fila.\n";
+    cout << "4. Insere elemento no início da fila.\n";
     cout << "0. Fim.\n";
     cout << "Opcao: ";
     cin >> escolha;
