@@ -37,6 +37,14 @@ int main(int argc, char *argv[])
                 if(!Fila.insereInicio(Item))
                     cout << "Fila cheia. \n";
                 break;
+            case 5:
+                if (Fila.removeFim(Item)){
+                    cout << "Item " <<
+                    Item << " removido.\n";
+                }
+                else
+                    cout << "Fila vazia.\n";
+                break;
         }
     system("PAUSE");
     return EXIT_SUCCESS;

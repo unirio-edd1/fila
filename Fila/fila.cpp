@@ -69,3 +69,12 @@ bool fila::remove(int &elemento){
     }
     return false;
 }
+
+bool fila::removeFim(int& elemento){
+    if (!vazia()){
+        ini = (ini+n-1) % tam;
+        n--;
+        return true;
+    }
+    return false;
+}
